@@ -1,0 +1,25 @@
+{
+  "name": "05-uptaksnodejs",
+  "version": "1.0.0",
+  "description": "Proyectop MVC con node y MVC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/falexramos/Node.git"
+  },
+  "author": "Favian Ramos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/falexramos/Node/issues"
+  },
+  "homepage": "https://github.com/falexramos/Node#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
