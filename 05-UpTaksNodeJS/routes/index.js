@@ -18,10 +18,11 @@ module.exports = function() {
     router.get('/', proyectoscontroller.proyectosHome);
     router.get('/nuevo-proyecto', proyectoscontroller.formularioProyecto);
     router.post('/nuevo-proyecto', 
-    body('nombre').not().isEmpty().trim().escape(),
-    proyectoscontroller.nuevoProyecto);
+        body('nombre').not().isEmpty().trim().escape(),
+        proyectoscontroller.nuevoProyecto);
 
-
+//Listar Proyecto
+router.get('/proyectos/:url',proyectoscontroller.proyectoPorUrl);
 
     return router;
 
