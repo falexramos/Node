@@ -2,9 +2,14 @@ const Proyectos = require('../models/Proyectos');
 const slug =require('slug');
 
 
-exports.proyectosHome = (req, res) => {
+exports.proyectosHome = async(req, res) => {
+    //mostrando todos los proyectos que estan en la base de datos
+    const proyectos=await Proyectos.findAll();
+
+    // se pasan a la vista los datos recuperados de la db en const proyectos
     res.render('index', {
-        nombrePagina: 'Proyectos'
+        nombrePagina: 'Proyectos',
+        proyectos
     });
 }
 
